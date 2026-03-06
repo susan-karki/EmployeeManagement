@@ -1,0 +1,43 @@
+﻿@model HomeDetailsViewModel
+@{
+	ViewBag.Title = "Employee Details";
+}
+
+<div class="container mt-4">
+
+	<h3 class="mb-4">@Model.PageTitle</h3>
+
+	<div class="card shadow" style="width: 400px;">
+
+		<img src="~/image/luffy.jpg" class="card-img-top" style="height:250px; object-fit:cover;">
+
+		<div class="card-body">
+
+			<h5 class="card-title">@Model.Employee.Name</h5>
+
+			<p class="card-text">
+				<strong>Email :</strong> @Model.Employee.Email
+			</p>
+
+			<p class="card-text">
+				<strong>Department :</strong> @Model.Employee.Department
+			</p>
+
+			<div class="mt-3">
+
+				<a href="/home/index" class="btn btn-secondary btn-sm">Back</a>
+				<a href="#" class="btn btn-warning btn-sm">Edit</a>
+				<a href="#" class="btn btn-danger btn-sm">Delete</a>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>
+
+@section Scripts
+{
+	<script src="~/js/customscript.js"></script>
+}

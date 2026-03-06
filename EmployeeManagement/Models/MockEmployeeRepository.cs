@@ -12,6 +12,12 @@
                      new Employee { Id = 3, Name = "Alice Johnson", Email = "alice@example.com", Department = "Finance" },
                 };
         }
+
+        public IEnumerable<Employee> GetAllEmployee()
+        {
+            return _employeeList;
+        }
+
         public Employee GetEmployee(int Id)
         {
             return _employeeList.FirstOrDefault(e => e.Id == Id);
