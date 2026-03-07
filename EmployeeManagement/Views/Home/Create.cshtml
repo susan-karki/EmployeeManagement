@@ -23,7 +23,6 @@
             <span asp-validation-for="Email" class="text-danger"></span>
         </div>
 
-        <!-- Department Dropdown -->
         <div class="mb-3">
             <label asp-for="Department" class="form-label">Department</label>
             <select asp-for="Department" class="form-select" asp-items="Html.GetEnumSelectList<Dept>()" required>
